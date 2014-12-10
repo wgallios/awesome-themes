@@ -27,22 +27,28 @@ end
 themedir      = themes .. themename
 
 wallpaper1    = themedir .. "/wall.png"
-wallpaper2    = themedir .. "/background.png"
-wallpaper3    = sharedthemes .. "/zenburn/zenburn-background.png"
-wallpaper4    = sharedthemes .. "/default/background.png"
+-- wallpaper2    = themedir .. "/background.png"
+-- wallpaper3    = sharedthemes .. "/zenburn/zenburn-background.png"
+-- wallpaper4    = sharedthemes .. "/default/background.png"
 wpscript      = home .. "/.wallpaper"
 
 if awful.util.file_readable(wallpaper1) then
-  theme.wallpaper = wallpaper1
-elseif awful.util.file_readable(wallpaper2) then
-  theme.wallpaper = wallpaper2
+    theme.wallpaper = wallpaper1
 elseif awful.util.file_readable(wpscript) then
   theme.wallpaper_cmd = { "sh " .. wpscript }
-elseif awful.util.file_readable(wallpaper3) then
-  theme.wallpaper = wallpaper3
-else
-  theme.wallpaper = wallpaper4
 end
+    --
+-- if awful.util.file_readable(wallpaper1) then
+  -- theme.wallpaper = wallpaper1
+-- elseif awful.util.file_readable(wallpaper2) then
+  -- theme.wallpaper = wallpaper2
+-- elseif awful.util.file_readable(wpscript) then
+  -- theme.wallpaper_cmd = { "sh " .. wpscript }
+-- elseif awful.util.file_readable(wallpaper3) then
+  -- theme.wallpaper = wallpaper3
+-- else
+  -- theme.wallpaper = wallpaper4
+-- end
 --}}}
 
 theme.font                          = "Terminus 10"
@@ -115,5 +121,7 @@ theme.tasklist_disable_icon         = true
 theme.tasklist_floating             = ""
 theme.tasklist_maximized_horizontal = ""
 theme.tasklist_maximized_vertical   = ""
+
+theme.awesome_icon = "/usr/share/awesome/icons/awesome16.png"
 
 return theme
