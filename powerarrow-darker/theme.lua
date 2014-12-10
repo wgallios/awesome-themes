@@ -35,7 +35,7 @@ wpscript      = home .. "/.wallpaper"
 if awful.util.file_readable(wallpaper1) then
     theme.wallpaper = wallpaper1
 elseif awful.util.file_readable(wpscript) then
-  theme.wallpaper_cmd = { "sh " .. wpscript }
+  theme.wallpaper_cmd = { "sh ~/.wallpaper &" }
 end
     --
 -- if awful.util.file_readable(wallpaper1) then
@@ -98,6 +98,7 @@ theme.layout_floating               = themedir .. "/icons/floating.png"
 theme.arrl                          = themedir .. "/icons/arrl.png"
 theme.arrl_dl                       = themedir .. "/icons/arrl_dl.png"
 theme.arrl_ld                       = themedir .. "/icons/arrl_ld.png"
+theme.arrl_ld_sf                    = themedir .. "/icons/arrl_ld_sf.png"
 
 theme.widget_ac                     = themedir .. "/icons/ac.png"
 theme.widget_battery                = themedir .. "/icons/battery.png"
