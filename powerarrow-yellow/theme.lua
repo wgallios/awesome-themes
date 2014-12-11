@@ -20,7 +20,7 @@ end
 sharedicons   = shared .. "/icons"
 sharedthemes  = shared .. "/themes"
 themes        = config .. "/themes"
-themename     = "/powerarrow-darker"
+themename     = "/powerarrow-yellow"
 if not awful.util.file_readable(themes .. themename .. "/theme.lua") then
        themes = sharedthemes
 end
@@ -52,21 +52,27 @@ end
 --}}}
 
 theme.font                          = "Terminus 10"
-theme.fg_normal                     = "#DDDDFF"
-theme.fg_focus                      = "#F0DFAF"
-theme.fg_urgent                     = "#CC9393"
-theme.bg_normal                     = "#1A1A1A"
-theme.bg_focus                      = "#313131"
-theme.bg_urgent                     = "#1A1A1A"
+
+theme.fg_normal                     = "#00FF00"
+theme.fg_focus                      = "#000000"
+theme.fg_urgent                     = "#d75f00"
+
+theme.bg_normal                     = "#1C1C1C"
+theme.bg_focus                      = "#d7ff00"
+theme.bg_urgent                     = "#d75f00"
+
 theme.border_width                  = "0"
 theme.border_normal                 = "#3F3F3F"
 theme.border_focus                  = "#7F7F7F"
 theme.border_marked                 = "#CC9393"
-theme.titlebar_bg_focus             = "#FFFFFF"
+
+theme.titlebar_bg_focus             = "#000000"
 theme.titlebar_bg_normal            = "#FFFFFF"
-theme.taglist_fg_focus              = "#D8D782"
-theme.tasklist_bg_focus             = "#1A1A1A"
-theme.tasklist_fg_focus             = "#D8D782"
+
+theme.taglist_fg_focus              = "#000000"
+theme.tasklist_bg_focus             = "#d7FF00"
+theme.tasklist_fg_focus             = "#000000"
+
 theme.textbox_widget_margin_top     = 1
 theme.notify_fg                     = theme.fg_normal
 theme.notify_bg                     = theme.bg_normal
@@ -118,22 +124,11 @@ theme.widget_vol_mute               = themedir .. "/icons/vol_mute.png"
 theme.widget_mail                   = themedir .. "/icons/mail.png"
 theme.widget_mail_on                = themedir .. "/icons/mail_on.png"
 
-
-theme.chrome                        = themedir .. "/icons/google-chrome.png"
-theme.firefox                       = themedir .. "/icons/firefox.png"
-theme.files                         = themedir .. "/icons/file-manager.png"
-theme.terminal                      = themedir .. "/icons/terminal.png"
-theme.debian                        = themedir .. "/icons/debian.png"
-theme.ubuntu                        = themedir .. "/icons/ubuntu.png"
-
-theme.icon_theme_size = "32x32"
-
 theme.tasklist_disable_icon         = true
 theme.tasklist_floating             = ""
 theme.tasklist_maximized_horizontal = ""
 theme.tasklist_maximized_vertical   = ""
 
--- theme.awesome_icon = "/usr/share/awesome/icons/awesome16.png"
 theme.awesome_icon = themedir .. "/icons/awesome16.png"
 
 return theme
