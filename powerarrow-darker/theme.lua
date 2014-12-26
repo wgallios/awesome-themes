@@ -67,15 +67,25 @@ theme.titlebar_bg_normal            = "#FFFFFF"
 theme.taglist_fg_focus              = "#D8D782"
 theme.tasklist_bg_focus             = "#1A1A1A"
 theme.tasklist_fg_focus             = "#D8D782"
-theme.textbox_widget_margin_top     = 1
+theme.textbox_widget_margin_top     = 0
 theme.notify_fg                     = theme.fg_normal
 theme.notify_bg                     = theme.bg_normal
 theme.notify_border                 = theme.border_focus
 theme.awful_widget_height           = 14
-theme.awful_widget_margin_top       = 2
+theme.awful_widget_margin_top       = 0
 theme.mouse_finder_color            = "#CC9393"
 theme.menu_height                   = "16"
-theme.menu_width                    = "140"
+-- theme.menu_width                    = "140"
+
+theme.arrow_bg_1                    = "#777e76"
+theme.arrow_bg_2                    = "#c2c2a4"
+theme.arrow_bg_3                    = "#92b0a0"
+theme.arrow_bg_4                    = "#d0785d"
+theme.arrow_bg_5                    = "#4b3b51"
+theme.arrow_bg_6                    = "#4b696d"
+theme.arrow_bg_7                    = "#777e76"
+theme.arrow_bg_8                    = "#313131"
+-- theme.arrow_bg_9                    = "#"
 
 theme.menu_submenu_icon             = themedir .. "/icons/submenu.png"
 theme.taglist_squares_sel           = themedir .. "/icons/square_sel.png"
@@ -99,6 +109,20 @@ theme.arrl                          = themedir .. "/icons/arrl.png"
 theme.arrl_dl                       = themedir .. "/icons/arrl_dl.png"
 theme.arrl_ld                       = themedir .. "/icons/arrl_ld.png"
 theme.arrl_ld_sf                    = themedir .. "/icons/arrl_ld_sf.png"
+
+-- colored arrows & icons
+theme.arr1                          = themedir .. "/icons/powerarrow/arr1.png"
+theme.arr2                          = themedir .. "/icons/powerarrow/arr2.png"
+theme.arr3                          = themedir .. "/icons/powerarrow/arr3.png"
+theme.arr4                          = themedir .. "/icons/powerarrow/arr4.png"
+theme.arr5                          = themedir .. "/icons/powerarrow/arr5.png"
+theme.arr6                          = themedir .. "/icons/powerarrow/arr6.png"
+theme.arr7                          = themedir .. "/icons/powerarrow/arr7.png"
+theme.arr8                          = themedir .. "/icons/powerarrow/arr8.png"
+theme.arr9                          = themedir .. "/icons/powerarrow/arr9.png"
+
+theme.pa_cpu                        = themedir .. "/icons/powerarrow/cpu.png"
+theme.pa_net                        = themedir .. "/icons/powerarrow/net.png"
 
 theme.widget_ac                     = themedir .. "/icons/ac.png"
 theme.widget_battery                = themedir .. "/icons/battery.png"
@@ -125,6 +149,29 @@ theme.files                         = themedir .. "/icons/file-manager.png"
 theme.terminal                      = themedir .. "/icons/terminal.png"
 theme.debian                        = themedir .. "/icons/debian.png"
 theme.ubuntu                        = themedir .. "/icons/ubuntu.png"
+theme.ubuntu_drk                    = themedir .. "/icons/start-here-ubuntu2.png"
+theme.virtual_box                   = themedir .. "/icons/virtual-box.png"
+
+theme.term_icon                     = themedir .. "/icons/terminal-icon.png"
+theme.www_icon                      = themedir .. "/icons/chromes.png"
+theme.gimp_icon                     = themedir .. "/icons/gimpish.png"
+theme.folder                        = themedir .. "/icons/folder.png"
+theme.notify                        = themedir .. "/icons/notify.png"
+
+theme.battery_100                   = themedir .. "/icons/gpm-battery-100.png"
+theme.battery_80                    = themedir .. "/icons/gpm-battery-080.png"
+theme.battery_60                    = themedir .. "/icons/gpm-battery-060.png"
+theme.battery_40                    = themedir .. "/icons/gpm-battery-040.png"
+theme.battery_20                    = themedir .. "/icons/gpm-battery-020.png"
+theme.battery_00                    = themedir .. "/icons/gpm-battery-000.png"
+theme.battery_100_charging          = themedir .. "/icons/gpm-battery-100-charging.png"
+theme.battery_80_charging           = themedir .. "/icons/gpm-battery-080-charging.png"
+theme.battery_60_charging           = themedir .. "/icons/gpm-battery-060-charging.png"
+theme.battery_40_charging           = themedir .. "/icons/gpm-battery-040-charging.png"
+theme.battery_20_charging           = themedir .. "/icons/gpm-battery-020-charging.png"
+theme.battery_00_charging           = themedir .. "/icons/gpm-battery-000-charging.png"
+theme.battery_ac                    = themedir .. "/icons/gpm-ac-adapter.png"
+theme.battery_empty                 = themedir .. "/icons/gpm-battery-empty.png"
 
 theme.icon_theme_size = "32x32"
 
